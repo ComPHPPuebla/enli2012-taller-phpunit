@@ -1,0 +1,9 @@
+{
+	"name": "comphppuebla/phpunitws",
+    "description": "Taller de PHPUnit Comunidad PHP Puebla",
+    "homepage": "http://www.comunidadphppuebla.com",
+    "license": "MIT",
+	"require": {
+		"phpunit/phpunit": "3.7.*"
+	}
+}
