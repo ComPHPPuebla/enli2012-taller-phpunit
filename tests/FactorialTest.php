@@ -7,21 +7,21 @@ require_once dirname(__FILE__) . '/../application/Factorial.php';
 class   FactorialTest 
 extends PHPUnit_Framework_TestCase
 {
-	public function testFactorialForOne()
+	public function testOneFactorial()
 	{
 		$factorial = new Factorial();
 		$factorialForOne = $factorial->calculate(1);
 		$this->assertEquals(1, $factorialForOne);
 	}
 	
-	public function testFactorialForFour()
+	public function testFourFactorial()
 	{
 		$factorial = new Factorial();
 		$factorialForFour = $factorial->calculate(4);
 		$this->assertEquals(24, $factorialForFour);
 	}
 	
-	public function testFactorialForTen()
+	public function testTenFactorial()
 	{
 		$factorial = new Factorial();
 		$factorialForTen = $factorial->calculate(10);

@@ -3,10 +3,10 @@
         <directory>./</directory>               
     </testsuite>
     <filter>
-	    <whitelist>
+	    <whitelist addUncoveredFilesFromWhitelist="false">
 	        <exclude>
 	            <file>mock-test.php</file>
-	            <directory>../vendor/</directory>
+	            <directory suffix=".php">../vendor</directory>
 	        </exclude>	        
 	    </whitelist>
     </filter>
