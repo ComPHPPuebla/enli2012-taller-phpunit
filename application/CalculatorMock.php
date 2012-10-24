@@ -1,6 +1,4 @@
 <?php
-require dirname(__FILE__) . '/Calculator.php';
-
 /**
  * Mock class used to test the static method doOperation with argument 'add' in class 
  * Calculator

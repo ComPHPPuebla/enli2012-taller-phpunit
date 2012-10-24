@@ -1,5 +1,5 @@
 <?php
-require dirname(__FILE__) . '/../application/Factorial.php';
+require_once dirname(__FILE__) . '/../application/Factorial.php';
 
 /**
  * Test class that uses Data Providers and tests Exceptions

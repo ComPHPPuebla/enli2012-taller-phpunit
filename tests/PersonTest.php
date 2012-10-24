@@ -1,9 +1,6 @@
 <?php
-require dirname(__FILE__) . '/../library/ComPHPPuebla/Loader/Autoloader.php';
-$autoloader = new \ComPHPPuebla\Loader\Autoloader(
-	dirname(__FILE__) . '/../library/', 'ComPHPPuebla'
-);
-$autoloader->register();
+$autoloader = require dirname(__FILE__) . '/../vendor/autoload.php';
+$autoloader->add('ComPHPPuebla', dirname(__FILE__) . '/../library');
 
 use \ComPHPPuebla\Person;
 use \ComPHPPuebla\Database\PDOAdapter;

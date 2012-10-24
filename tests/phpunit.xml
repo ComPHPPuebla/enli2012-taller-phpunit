@@ -1,0 +1,18 @@
+<phpunit colors="true">         
+    <testsuite name="Taller de PHPUnit ENLi 2012">
+        <directory>./</directory>               
+    </testsuite>
+    <filter>
+	    <whitelist>
+	        <exclude>
+	            <file>mock-test.php</file>
+	            <directory>../vendor/</directory>
+	        </exclude>	        
+	    </whitelist>
+    </filter>
+    <logging>
+        <log type="coverage-html" target="./log/report" charset="UTF-8"
+            yui="true" highlight="true" lowUpperBound="50" highLowerBound="80"/>
+        <log type="testdox-html" target="./log/testdox.html" />
+    </logging>         
+</phpunit>
