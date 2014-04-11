@@ -20,11 +20,18 @@ $ bin/phpunit tests/TestsAEjecutar.php
 ```
 
 Debes reemplazar `TestsAEjecutar.php` por el nombre de la clase de la que quieres ejecutar
-los tests, por ejemplo: `FactorialTest.php`. También puedes ejecutar todos los tests 
-usando el archivo de configuración `phpunit.xml`.
+los tests, por ejemplo: `FactorialTest.php`.
+
+También puedes ejecutar todos los tests usando el archivo de configuración `phpunit.xml`.
 
 ```bash
 $ bin/phpunit
+```
+
+Para ejecutar todos los tests necesitas crear una base de datos con el siguiente comando:
+
+```bash
+$ mysql --user=root --password="root" --default-character-set=utf8 < data/database.sql
 ```
 
 Además de ejecutar todos los tests obtendrás dos reportes code coverage en formato HTML y 

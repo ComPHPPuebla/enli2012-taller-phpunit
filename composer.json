@@ -1,11 +1,11 @@
 {
-	"name": "comphppuebla/phpunitws",
+    "name": "comphppuebla/phpunitws",
     "description": "Taller de PHPUnit Comunidad PHP Puebla 2012",
     "homepage": "http://www.comunidadphppuebla.com",
     "license": "MIT",
-	"require": {
-		"phpunit/phpunit": "4.*"
-	},
+    "require": {
+        "phpunit/phpunit": "4.*"
+    },
     "config": {
         "bin-dir": "bin"
     },

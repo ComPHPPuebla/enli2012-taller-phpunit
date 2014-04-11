@@ -2,6 +2,10 @@
 use \ComPHPPuebla\Person;
 use \ComPHPPuebla\Database\PDOAdapter;
 
+/**
+ * @backupGlobals disabled
+ * @backupStaticAttributes disabled
+ */
 class PersonTest extends PHPUnit_Framework_TestCase
 {
     /**
@@ -50,11 +54,11 @@ class PersonTest extends PHPUnit_Framework_TestCase
      */
     protected function getPersonWithMockAdapter()
     {
-        $adapter = $this->getMock(
-            '\ComPHPPuebla\Database\PDOAdapter',
-            array('select'),
-            $this->getDataBaseCredentials()
-        );
+        $adapter = $this->getMockBuilder('\ComPHPPuebla\Database\PDOAdapter')
+                        ->setMethods(array('select'))
+                        ->setConstructorArgs($this->getDataBaseCredentials())
+                        ->getMock();
+
         $adapter->expects($this->once())
                 ->method('select')
                 ->will($this->returnValue($this->maleAdults));
