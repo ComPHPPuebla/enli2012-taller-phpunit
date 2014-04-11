@@ -28,7 +28,8 @@ También puedes ejecutar todos los tests usando el archivo de configuración `ph
 $ bin/phpunit
 ```
 
-Para ejecutar todos los tests necesitas crear una base de datos con el siguiente comando:
+Para ejecutar todos los tests necesitas crear una base de datos con el siguiente comando (reemplaza
+los valores de usuario y contraseña):
 
 ```bash
 $ mysql --user=root --password="root" --default-character-set=utf8 < data/database.sql
